@@ -16,7 +16,7 @@ public ResponseEntity<?> getCategoryList(){
     ResponseEntity<Object> responseEntity = restTemplate.exchange(url, HttpMethod.GET,entity,Object.class);
     return  ResponseEntity.status(responseEntity.getStatusCode()).body(responseEntity.getBody());
 }
-`
+```
 
 * ### Client 
 
