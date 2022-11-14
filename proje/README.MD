@@ -7,17 +7,16 @@
 
 * ### Api Endpoint 
 
-
-    http://localhost:8080/api/commerce/inventory/categories
-
-    @GetMapping("/categories")
-    public ResponseEntity<?> getCategoryList(){
-        String url = BASE_URL+"categories";
-        HttpEntity<String> entity = new HttpEntity<>("Gövde");
-        ResponseEntity<Object> responseEntity = restTemplate.exchange(url, HttpMethod.GET,entity,Object.class);
-        return  ResponseEntity.status(responseEntity.getStatusCode()).body(responseEntity.getBody());
-    }
-
+`
+http://localhost:8080/api/commerce/inventory/categories
+@GetMapping("/categories")
+public ResponseEntity<?> getCategoryList(){
+    String url = BASE_URL+"categories";
+    HttpEntity<String> entity = new HttpEntity<>("Gövde");
+    ResponseEntity<Object> responseEntity = restTemplate.exchange(url, HttpMethod.GET,entity,Object.class);
+    return  ResponseEntity.status(responseEntity.getStatusCode()).body(responseEntity.getBody());
+}
+`
 
 * ### Client 
 
