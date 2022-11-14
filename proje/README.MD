@@ -7,7 +7,7 @@
 
 * ### Api Endpoint 
 
-`
+```
 http://localhost:8080/api/commerce/inventory/categories
 @GetMapping("/categories")
 public ResponseEntity<?> getCategoryList(){
